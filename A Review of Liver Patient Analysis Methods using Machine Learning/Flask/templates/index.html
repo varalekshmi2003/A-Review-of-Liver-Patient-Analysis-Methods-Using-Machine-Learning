@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Liver Prediction Model</title>
+
+</head>
+<body>
+<section id="about" class="about"> 
+   <div class="container">
+        <h2 class='container-heading'><span class="heading_font">Liver Disease Prediction</span></h2>
+    </div>
+
+    <div class="ml-container">
+        <div class="first">
+        <form action="/predict" method="POST">
+            <br>
+            <h3>Age</h3>
+            <input type id="age" name="age" placeholder="Age" required="required">
+            <br>
+            <h3>Gender</h3>
+            <input type id="gender" name="gender" placeholder="Male = 1, Female=0" required="required">
+            <br>
+            <h3>Total Bilirubin</h3>
+            <input type id="tb" name="tb" placeholder="Total Bilirubin" required="required">
+            <br>
+            <h3>Direct Bilirubin</h3>
+            <input type id="db" name="db" placeholder="Direct Bilirubin" required="required">
+            <br>
+            <h3>Alkaline Phosphotase</h3>
+            <input type  id="ap" name="ap" placeholder="Alkaline Phosphotase" required="required">
+            <br>
+            <h3>Alamine Aminotransferase</h3>
+            <input type id="aa1" name="aa1" placeholder="Alamine Aminotransferase" required="required">
+            <br>
+            <h3>Aspartate Aminotransferase</h3>
+            <input type  id="aa2" name="aa2" placeholder="Aspartate Aminotransferase" required="required">
+            <br>
+            <h3>Total Protiens</h3>
+            <input type id="tp" name="tp" placeholder="Total Protiens" required="required">
+            <br>
+            <h3>Albumin</h3>
+            <input type id="a" name="a" placeholder="Albumin" required="required">
+            <br>
+            <h3>Albumin and Globulin Ratio</h3>
+            <input type id="agr" name="agr" placeholder="Albumin and Globulin Ratio" required="required">
+            <br>
+            <br>
+            <br>
+            <button id="sub" type="submit " onclick="action">Submit</button>
+            <br>
+            <br>
+            <br>
+            <br>
+     
+
+        </form>
+       </div>
+   </div>
+</section>
+
+
+<style>
+
+
+/* Color */
+body{
+font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+
+
+/* Heading Font */
+.container-heading{
+    margin: 0;
+}
+
+.heading_font{
+    color: #black;
+font-family: 'Pacifico', cursive;
+font-size: 50px;
+font-weight: normal;
+}
+
+
+
+/* Box */
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            width: 150px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            width: 220px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            width: 180px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            width: 250px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fifth {
+            border-radius: 14px;
+            height: 25px;
+            width: 270px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #sixth {
+            border-radius: 14px;
+            height: 25px;
+            width: 280px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #seventh {
+            border-radius: 14px;
+            height: 25px;
+            width: 170px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #eight {
+            border-radius: 14px;
+            height: 25px;
+            width: 150px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #ninth {
+            border-radius: 14px;
+            height: 25px;
+            width: 280px;
+            font-size: 20px;
+            text-align: center;
+        }
+        #tenth {
+            border-radius: 14px;
+            height: 25px;
+            width: 280px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+
+
+/* Submit Button */
+#sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+
+
+</style>
+
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver Disease Result</title>
+</head>
+
+<body>
+<section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container">
+        <form action="/predict"  method="POST">
+            <h2 class='container-heading'><span class="heading_font">Liver Disease Prediction</span></h2>
+
+        <br><br><br><br><br><br><br>
+
+        <!-- Result -->
+<div class="results">
+{% if prediction==1 %}
+<h1><span class='danger'>Oops! <br><br>You have LIVER DISEASE <br><br>Please Consult a Doctor.</span></h1>
+{% elif prediction==0 %}
+<h1><span class='safe'>Congratulation! <br><br>You DON'T have LIVER DISEASE.</span></h1>
+{% endif %}
+</div>
+        </form>
+
+    </div>
+    <div>
+            <br><br> <br><br><br><br><br><br><br><br>
+
+           
+    </div>
+</section>
+
+<style>
+
+
+/* Color */
+body{
+font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+
+
+/* Heading Font */
+.container-heading{
+    margin: 0;
+}
+
+.heading_font{
+    color: #black;
+font-family: 'Pacifico', cursive;
+font-size: 50px;
+font-weight: normal;
+}
+
+
+
+</style>
+
+
+</body>
+
+</html>
